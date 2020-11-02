@@ -1,4 +1,4 @@
 ---
 published: true
 ---
-![]({{site.baseurl}}/https://miro.medium.com/max/875/1*lDUijOPp-YOa4IajsdvdJg.jpeg)
+<img src="https://i.ibb.co/Y833pYB/Trace-Back.jpg" alt="Trace-Back" border="0">
