@@ -112,7 +112,7 @@ published: true
   
 <blockquote>
 <p>00-header displays when we log by ssh as webadmin so we need to make our reverse shell.</p> 
-<p>I used [link](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) cheatsheet</p>
+<p>I used <a href="http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet">Pentestmonkey</a> cheatsheet  </p>
 </blockquote>
   
 <img src="https://i.ibb.co/ygS70XQ/image.png" alt="image" border="0">
@@ -123,4 +123,4 @@ published: true
 
 <img src="https://i.ibb.co/f0kbR6D/1-9f-Z-f-RTAn3opew-C01-QSh-HQ.png" alt="1-9f-Z-f-RTAn3opew-C01-QSh-HQ" border="0">  
 
-<h1>Thanks for Reading 🙏</h1>  
+<h1>Thanks for Reading 🙏</h1>
