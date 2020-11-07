@@ -27,7 +27,7 @@ published: true
 <img src="https://i.ibb.co/sRfr3Tn/LFI-3.png" alt="LFI-3" border="0">
 
 <blockquote>  
-<p>ِBANG ! , we go credentials.</p>  
+<p>ِBANG ! , we got credentials.</p>  
 <p>After some search i found out that we can have a reverse shell by uploading it to manager page</p>
 </blockquote> 
   
@@ -57,7 +57,7 @@ published: true
 <img src="https://i.ibb.co/C0536bQ/User-hasheno.png" alt="User-hasheno" border="0">
 
 <blockquote>  
-<p>BAM ! , we logged in and go user hash</p>
+<p>BAM ! , we logged in and got user hash</p>
 <p>I found this article about LXD privilege escalation and knowing that the user is in LXD group <a href="https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation">lxd privilege escalation</a> 
 <p>Let`s build !</p>  
 
