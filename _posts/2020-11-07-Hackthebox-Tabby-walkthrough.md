@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 <img src="https://i.ibb.co/8X9PmsQ/124295832-3653953797976480-4510901479630080213-o.jpg" alt="124295832-3653953797976480-4510901479630080213-o" border="0">
 
@@ -66,4 +66,4 @@ published: true
 <img src="https://i.ibb.co/pnj3Dfw/start-server-to-priv-escalation.png" alt="start-server-to-priv-escalation" border="0">
 <img src="https://i.ibb.co/kMg1mLr/Rooted.png" alt="Rooted" border="0">
   
-<h1>Thanks for Reading 🙏</h1>  
+<h1>Thanks for Reading 🙏</h1>
