@@ -58,9 +58,9 @@ published: true
 
 <blockquote>  
 <p>BAM ! , we logged in and go user hash</p>
-<p>I found this article about LXD privilege escalation and knowing that the user is in LXD group<a href="https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation">lxd privilege escalation</a> 
+<p>I found this article about LXD privilege escalation and knowing that the user is in LXD group <a href="https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation">lxd privilege escalation</a> 
 <p>Let`s build !</p>  
-</blockquote>
+
   
 <img src="https://i.ibb.co/gRSk725/BUILDING-L-H3-ML-BEH-PRIV-ESC.png" alt="BUILDING-L-H3-ML-BEH-PRIV-ESC" border="0">
 <img src="https://i.ibb.co/pnj3Dfw/start-server-to-priv-escalation.png" alt="start-server-to-priv-escalation" border="0">
