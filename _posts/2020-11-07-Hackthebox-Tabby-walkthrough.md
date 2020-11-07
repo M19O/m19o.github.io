@@ -65,5 +65,6 @@ published: true
 <img src="https://i.ibb.co/gRSk725/BUILDING-L-H3-ML-BEH-PRIV-ESC.png" alt="BUILDING-L-H3-ML-BEH-PRIV-ESC" border="0">
 <img src="https://i.ibb.co/pnj3Dfw/start-server-to-priv-escalation.png" alt="start-server-to-priv-escalation" border="0">
 <img src="https://i.ibb.co/kMg1mLr/Rooted.png" alt="Rooted" border="0">
+</blockquote>  
   
 <h1>Thanks for Reading 🙏</h1>
