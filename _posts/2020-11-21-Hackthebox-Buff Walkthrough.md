@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 https://0xprashant.github.io/hackthebox/buff/buff.png
 
@@ -94,16 +94,3 @@ https://0xprashant.github.io/hackthebox/buff/buff.png
 
 <h1>ROOT Flag !</h1>
 <img src="https://i.ibb.co/By7fdbL/admin-hash.png" alt="admin-hash" border="0">
-
-
-
-
-
-
-
-
-
-
-
-
- 
