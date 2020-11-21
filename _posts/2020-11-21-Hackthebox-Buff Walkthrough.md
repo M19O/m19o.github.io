@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 https://0xprashant.github.io/hackthebox/buff/buff.png
 
