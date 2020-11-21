@@ -94,3 +94,5 @@ published: true
 
 <h1>ROOT Flag !</h1>
 <img src="https://i.ibb.co/By7fdbL/admin-hash.png" alt="admin-hash" border="0">
+
+<h1>Thanks for Reading 🙏</h1>
