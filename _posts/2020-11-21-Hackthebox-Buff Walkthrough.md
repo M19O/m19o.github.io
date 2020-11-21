@@ -1,7 +1,7 @@
 ---
-published: false
+published: true
 ---
-https://0xprashant.github.io/hackthebox/buff/buff.png
+<img src="https://i.ibb.co/WtCrJ77/buff.png" alt="buff" border="0">
 
 <h1>Enumeration</h1>
 <blockquote>
