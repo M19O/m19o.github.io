@@ -111,9 +111,44 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <img src="https://i.ibb.co/87nhc6p/dlw2ty.png" alt="dlw2ty" border="0">
 
 <h1>Phishing script<h1>
->  
-<pre>7pipi yaba
-</pre>
+
+<pre>➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
+=== Trying sneakymailer.htb:25...
+=== Connected to sneakymailer.htb.
+ -  220 debian ESMTP Postfix (Debian/GNU)
+ -  EHLO m190
+ -  250-debian
+ -  250-PIPELINING
+ -  250-SIZE 10240000
+ -  250-VRFY
+ -  250-ETRN
+ -  250-STARTTLS
+ -  250-ENHANCEDSTATUSCODES
+ -  250-8BITMIME
+ -  250-DSN
+ -  250-SMTPUTF8
+ -  250 CHUNKING
+ - MAIL FROM: angelicaramos@sneakymailer.htb
+ -  250 2.1.0 Ok
+ - RCPT TO: angelicaramos@sneakymailer.htb
+ -  250 2.1.5 Ok
+ - DATA
+ -  354 End data with CR LF.CR LF
+ - Date: Wed, 15 Jul 2020 22:56:30 -0400
+ - To: angelicaramos@sneakymailer.htb
+ - From: angelicaramos@sneakymailer.htb
+ - Subject: test Wed, 15 Jul 2020 22:56:30 -0400
+ - Message-Id: 20200715225630.013546@m19o
+ - X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/
+ - 
+ - Test msg
+ - 
+ - 
+ - .
+ -  250 2.0.0 Ok: queued as F3049248C8
+ - QUIT
+ -  221 2.0.0 Bye
+=== Connection closed with remote host.</pre>
  
   
   
