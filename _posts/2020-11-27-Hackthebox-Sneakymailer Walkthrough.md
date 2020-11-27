@@ -104,43 +104,62 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <p>We need to sned spoofed emails to check what we can get, I used swaks</p>
 <p><a href="https://github.com/jetmore/swaks" target="_blank">https://github.com/jetmore/swaks</a></p>
 </blockquote>  
-<pre>➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
-=== Trying sneakymailer.htb:25...
-=== Connected to sneakymailer.htb.
-<-  220 debian ESMTP Postfix (Debian/GNU)
- -> EHLO m19o
-<-  250-debian
-<-  250-PIPELINING
-<-  250-SIZE 10240000
-<-  250-VRFY
-<-  250-ETRN
-<-  250-STARTTLS
-<-  250-ENHANCEDSTATUSCODES
-<-  250-8BITMIME
-<-  250-DSN
-<-  250-SMTPUTF8
-<-  250 CHUNKING
- -> MAIL FROM:<angelicaramos@sneakymailer.htb>
-<-  250 2.1.0 Ok
- -> RCPT TO:<angelicaramos@sneakymailer.htb>
-<-  250 2.1.5 Ok
- -> DATA
-<-  354 End data with <CR><LF>.<CR><LF>
- -> Date: Wed, 15 Jul 2020 22:56:30 -0400
- -> To: angelicaramos@sneakymailer.htb
- -> From: angelicaramos@sneakymailer.htb
- -> Subject: test Wed, 15 Jul 2020 22:56:30 -0400
- -> Message-Id: <20200715225630.013546@m19o>
- -> X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/
- -> 
- -> Test msg
- -> 
- -> 
- -> .
-<-  250 2.0.0 Ok: queued as F3049248C8
- -> QUIT
-<-  221 2.0.0 Bye
-=== Connection closed with remote host. </pre>  
+<pre>➜  sneakymailer nmap -sV -sC -oA scans/nmap.full -p- -T4 -v 10.10.10.197
+# Nmap 7.80 scan initiated Tue Jul 14 00:41:59 2020 as: nmap -sV -sC -oA scans/nmap.full -p- -T4 -v 10.10.10.197
+Nmap scan report for sneakymailer.htb (10.10.10.197)
+Host is up (0.33s latency).
+Not shown: 65528 closed ports
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      vsftpd 3.0.3
+22/tcp   open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 57:c9:00:35:36:56:e6:6f:f6:de:86:40:b2:ee:3e:fd (RSA)
+|   256 d8:21:23:28:1d:b8:30:46:e2:67:2d:59:65:f0:0a:05 (ECDSA)
+|_  256 5e:4f:23:4e:d4:90:8e:e9:5e:89:74:b3:19:0c:fc:1a (ED25519)
+25/tcp   open  smtp     Postfix smtpd
+|_smtp-commands: debian, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING, 
+80/tcp   open  http     nginx 1.14.2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: nginx/1.14.2
+|_http-title: Did not follow redirect to http://sneakycorp.htb
+143/tcp  open  imap     Courier Imapd (released 2018)
+|_imap-capabilities: CHILDREN STARTTLS IDLE IMAP4rev1 THREAD=ORDEREDSUBJECT CAPABILITY ENABLE UTF8=ACCEPTA0001 completed OK NAMESPACE ACL2=UNION ACL THREAD=REFERENCES QUOTA UIDPLUS SORT
+| ssl-cert: Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Subject Alternative Name: email:postmaster@example.com
+| Issuer: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-05-14T17:14:21
+| Not valid after:  2021-05-14T17:14:21
+| MD5:   3faf 4166 f274 83c5 8161 03ed f9c2 0308
+|_SHA-1: f79f 040b 2cd7 afe0 31fa 08c3 b30a 5ff5 7b63 566c
+|_ssl-date: TLS randomness does not represent time
+993/tcp  open  ssl/imap Courier Imapd (released 2018)
+| ssl-cert: Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Subject Alternative Name: email:postmaster@example.com
+| Issuer: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Public Key type: rsa
+| Public Key bits: 3072
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-05-14T17:14:21
+| Not valid after:  2021-05-14T17:14:21
+| MD5:   3faf 4166 f274 83c5 8161 03ed f9c2 0308
+|_SHA-1: f79f 040b 2cd7 afe0 31fa 08c3 b30a 5ff5 7b63 566c
+|_ssl-date: TLS randomness does not represent time
+8080/tcp open  http     nginx 1.14.2
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: nginx/1.14.2
+|_http-title: Welcome to nginx!
+Service Info: Host:  debian; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 14 00:58:15 2020 -- 1 IP address (1 host up) scanned in 976.22 seconds
+</pre>  
  
   
   
