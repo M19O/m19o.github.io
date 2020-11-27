@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 <img src="https://i.ibb.co/2tgV0yX/sneakymailer.png" alt="sneakymailer" border="0">
 
@@ -75,7 +75,9 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <p>At the end of the scan you can see the domain so we need to add it. add <code class="language-plaintext highlighter-rouge">sneakycorp.htb</code> to /etc/hosts file </p>
 
 <h1>Port 80<h2>
+<blockquote>  
 <p>Let`s see what we can find.</p>
+</blockquote>  
 <img src="https://i.ibb.co/xjXWFGz/3.png" alt="3" border="0">   
 
 <p>It`s a pypi server</p>
@@ -87,11 +89,14 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <img src="https://i.ibb.co/hZv0F0Z/5.png" alt="5" border="0">
 <img src="https://i.ibb.co/bXdKgKg/6.png" alt="6" border="0">
 <img src="https://i.ibb.co/RSBHtZX/7.png" alt="7" border="0">
+<blockquote>  
 <p>Now save it all in a fill name it <code class="language-plaintext highlighter-rouge">emails</code></p>
- 
+</blockquote>
 <h1>Phishing<h1>
+<blockquote>  
 <p>We need to sned spoofed emails to check what we can get, I used swaks</p>
 <p><a href="https://github.com/jetmore/swaks" target="_blank">https://github.com/jetmore/swaks</a></p>
+</blockquote>  
 <pre>➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
 === Trying sneakymailer.htb:25...
 === Connected to sneakymailer.htb.
