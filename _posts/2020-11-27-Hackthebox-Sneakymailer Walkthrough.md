@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 <img src="https://i.ibb.co/2tgV0yX/sneakymailer.png" alt="sneakymailer" border="0">
 
@@ -76,9 +76,60 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 
 <h1>Port 80<h2>
 <p>Let`s see what we can find.</p>
-  
-  
-  
+<img src="https://i.ibb.co/xjXWFGz/3.png" alt="3" border="0">   
+
+<p>It`s a pypi server</p>
+<p>Let`s check team and see what we can find</p>
+<img src="https://i.ibb.co/3BbXmVJ/4.png" alt="4" border="0">
+<p>All e-mails of employees including <code class="language-plaintext highlighter-rouge">ceo</code> </p>
+<p>Now we need to extract e-mails for the webpage, I used online email extractor tool.</p> 
+<p><a href="https://email-checker.net/extract" target="_blank">https://email-checker.net/extract</a></p>
+<img src="https://i.ibb.co/hZv0F0Z/5.png" alt="5" border="0">
+<img src="https://i.ibb.co/bXdKgKg/6.png" alt="6" border="0">
+<img src="https://i.ibb.co/RSBHtZX/7.png" alt="7" border="0">
+<p>Now save it all in a fill name it <code class="language-plaintext highlighter-rouge">emails</code></p>
+ 
+<h1>Phishing<h1>
+<p>We need to sned spoofed emails to check what we can get, I used swaks</p>
+<p><a href="https://github.com/jetmore/swaks" target="_blank">https://github.com/jetmore/swaks</a></p>
+<pre>➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
+=== Trying sneakymailer.htb:25...
+=== Connected to sneakymailer.htb.
+<-  220 debian ESMTP Postfix (Debian/GNU)
+ -> EHLO m19o
+<-  250-debian
+<-  250-PIPELINING
+<-  250-SIZE 10240000
+<-  250-VRFY
+<-  250-ETRN
+<-  250-STARTTLS
+<-  250-ENHANCEDSTATUSCODES
+<-  250-8BITMIME
+<-  250-DSN
+<-  250-SMTPUTF8
+<-  250 CHUNKING
+ -> MAIL FROM:<angelicaramos@sneakymailer.htb>
+<-  250 2.1.0 Ok
+ -> RCPT TO:<angelicaramos@sneakymailer.htb>
+<-  250 2.1.5 Ok
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Wed, 15 Jul 2020 22:56:30 -0400
+ -> To: angelicaramos@sneakymailer.htb
+ -> From: angelicaramos@sneakymailer.htb
+ -> Subject: test Wed, 15 Jul 2020 22:56:30 -0400
+ -> Message-Id: <20200715225630.013546@m19o>
+ -> X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Test msg
+ -> 
+ -> 
+ -> .
+<-  250 2.0.0 Ok: queued as F3049248C8
+ -> QUIT
+<-  221 2.0.0 Bye
+=== Connection closed with remote host. </pre>  
+ 
   
   
   
