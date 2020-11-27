@@ -110,7 +110,8 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 </blockquote>  
   
 
-<pre>➜  sneakymailer swaks <span class="nt">--from</span> <span class="s2">"angelicaramos@sneakymailer.htb"</span> <span class="nt">--body</span> <span class="s2">"Test msg"</span> <span class="nt">--to</span> angelicaramos@sneakymailer.htb
+<pre>
+<h8>➜  sneakymailer swaks <span class="nt">--from</span> <span class="s2">"angelicaramos@sneakymailer.htb"</span> <span class="nt">--body</span> <span class="s2">"Test msg"</span> <span class="nt">--to</span> angelicaramos@sneakymailer.htb
 <span class="o">===</span> Trying sneakymailer.htb:25...
 <span class="o">===</span> Connected to sneakymailer.htb.
 &lt;-  220 debian ESMTP Postfix <span class="o">(</span>Debian/GNU<span class="o">)</span>
@@ -147,4 +148,4 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
  -&gt; QUIT
 &lt;-  221 2.0.0 Bye
 <span class="o">===</span> Connection closed with remote host.
-</pre>
+<h8></pre>
