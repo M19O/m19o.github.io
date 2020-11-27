@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 <img src="https://i.ibb.co/2tgV0yX/sneakymailer.png" alt="sneakymailer" border="0">
 
@@ -89,11 +89,15 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <p>All e-mails of employees including <code class="language-plaintext highlighter-rouge">ceo</code> </p>
 <p>Now we need to extract e-mails for the webpage, I used online email extractor tool.</p> 
 <p><a href="https://email-checker.net/extract" target="_blank">https://email-checker.net/extract</a></p>
+</blockquote> 
+
+<blockquote>
+<p>crtl+a to select all and copy them.</p>  
 </blockquote>  
 <img src="https://i.ibb.co/hZv0F0Z/5.png" alt="5" border="0">
-  
+<blockquote>Paste them and click on extract email</blockquote>  
 <img src="https://i.ibb.co/bXdKgKg/6.png" alt="6" border="0">
-  
+<blockquote>Result</blockquote> 
 <img src="https://i.ibb.co/RSBHtZX/7.png" alt="7" border="0">
   
 <blockquote>  
@@ -106,7 +110,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 </blockquote>  
   
 
-<pre><h5>
+<pre>
 ➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
 === Trying sneakymailer.htb:25...
 === Connected to sneakymailer.htb.
@@ -140,9 +144,8 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
  -> 
  -> 
  -> .
-<-  250 2.0.0 Ok: queued as F3049248C8
- -> QUIT
-<-  221 2.0.0 Bye
-  Connection closed with remote host.
-<h5>  
+  -  250 2.0.0 Ok: queued as F3049248C8
+ - QUIT
+  -  221 2.0.0 Bye
+  Connection closed with remote host.  
 </pre>
