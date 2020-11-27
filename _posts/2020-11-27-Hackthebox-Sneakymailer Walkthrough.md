@@ -70,25 +70,32 @@ HOP RTT       ADDRESS
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
-
+<blockquote>
 <p>That`s a big scan result.</p>
 <p>At the end of the scan you can see the domain so we need to add it. add <code class="language-plaintext highlighter-rouge">sneakycorp.htb</code> to /etc/hosts file </p>
+</blockquote>  
 
 <h1>Port 80<h2>
 <blockquote>  
 <p>Let`s see what we can find.</p>
 </blockquote>  
 <img src="https://i.ibb.co/xjXWFGz/3.png" alt="3" border="0">   
-
+<blockquote>
 <p>It`s a pypi server</p>
 <p>Let`s check team and see what we can find</p>
+</blockquote>  
 <img src="https://i.ibb.co/3BbXmVJ/4.png" alt="4" border="0">
+<blockquote>  
 <p>All e-mails of employees including <code class="language-plaintext highlighter-rouge">ceo</code> </p>
 <p>Now we need to extract e-mails for the webpage, I used online email extractor tool.</p> 
 <p><a href="https://email-checker.net/extract" target="_blank">https://email-checker.net/extract</a></p>
+</blockquote>  
 <img src="https://i.ibb.co/hZv0F0Z/5.png" alt="5" border="0">
+  
 <img src="https://i.ibb.co/bXdKgKg/6.png" alt="6" border="0">
+  
 <img src="https://i.ibb.co/RSBHtZX/7.png" alt="7" border="0">
+  
 <blockquote>  
 <p>Now save it all in a fill name it <code class="language-plaintext highlighter-rouge">emails</code></p>
 </blockquote>
