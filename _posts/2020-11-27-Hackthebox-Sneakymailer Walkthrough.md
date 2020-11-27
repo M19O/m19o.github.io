@@ -105,7 +105,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <p><a href="https://github.com/jetmore/swaks" target="_blank">https://github.com/jetmore/swaks</a></p>
 </blockquote>  
   
-<p> 
+<h5> 
 <pre>➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
 === Trying sneakymailer.htb:25...
 === Connected to sneakymailer.htb.
@@ -142,7 +142,8 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <-  250 2.0.0 Ok: queued as F3049248C8
  -> QUIT
 <-  221 2.0.0 Bye
-  Connection closed with remote host.</pre></p>
+  Connection closed with remote host.
+</pre></h5>
   
   
   
