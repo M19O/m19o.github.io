@@ -111,8 +111,9 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <img src="https://i.ibb.co/87nhc6p/dlw2ty.png" alt="dlw2ty" border="0">
 
 <h1>Phishing script<h1>
-  
-<pre>7pipi yaba</pre>
+>  
+<pre>7pipi yaba
+</pre>
  
   
   
