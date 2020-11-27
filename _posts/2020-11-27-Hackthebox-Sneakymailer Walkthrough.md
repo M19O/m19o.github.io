@@ -70,3 +70,67 @@ HOP RTT       ADDRESS
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
+
+<p>That`s a big scan result.</p>
+<p>At the end of the scan you can see the domain so we need to add it. add <code class="language-plaintext highlighter-rouge">sneakycorp.htb</code> to /etc/hosts file </p>
+
+<h1>Port 80<h2>
+<p>Let`s see what we can find.</p>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
