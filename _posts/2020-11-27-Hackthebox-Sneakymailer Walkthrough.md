@@ -147,5 +147,5 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
   -  250 2.0.0 Ok: queued as F3049248C8
  - QUIT
   -  221 2.0.0 Bye
-  Connection closed with remote host.  
-</pre>
+  Connection closed with remote host.
+  <></pre>
