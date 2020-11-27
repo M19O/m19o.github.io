@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 <img src="https://i.ibb.co/2tgV0yX/sneakymailer.png" alt="sneakymailer" border="0">
 
@@ -105,8 +105,9 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 <p><a href="https://github.com/jetmore/swaks" target="_blank">https://github.com/jetmore/swaks</a></p>
 </blockquote>  
   
-<h5> 
-<pre>➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
+
+<pre><h5>
+➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
 === Trying sneakymailer.htb:25...
 === Connected to sneakymailer.htb.
 <-  220 debian ESMTP Postfix (Debian/GNU)
@@ -143,4 +144,5 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
  -> QUIT
 <-  221 2.0.0 Bye
   Connection closed with remote host.
-</pre></h5>
+<h5>  
+</pre>
