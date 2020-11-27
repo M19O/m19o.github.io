@@ -110,41 +110,41 @@ Nmap done: 1 IP address (1 host up) scanned in 1080.13 sec</pre>
 </blockquote>  
   
 
-<pre>
-➜  sneakymailer swaks --from "angelicaramos@sneakymailer.htb" --body "Test msg" --to angelicaramos@sneakymailer.htb
-=== Trying sneakymailer.htb:25...
-=== Connected to sneakymailer.htb.
- -  220 debian ESMTP Postfix (Debian/GNU)
- - EHLO m19o
- -  250-debian
- -  250-PIPELINING
- -  250-SIZE 10240000
- -  250-VRFY
- -  250-ETRN
- -  250-STARTTLS
- -  250-ENHANCEDSTATUSCODES
- -  250-8BITMIME
- -  250-DSN
- -  250-SMTPUTF8
- -  250 CHUNKING
- - MAIL FROM:angelicaramos@sneakymailer.htb
- -  250 2.1.0 Ok
- - RCPT TO: angelicaramos@sneakymailer.htb
- -  250 2.1.5 Ok
- - DATA
- -  354 End data with CR LF.CR LF
- -> Date: Wed, 15 Jul 2020 22:56:30 -0400
- -> To: angelicaramos@sneakymailer.htb
- -> From: angelicaramos@sneakymailer.htb
- -> Subject: test Wed, 15 Jul 2020 22:56:30 -0400
- -> Message-Id: 20200715225630.013546@m19o
- -> X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/
- -> 
- -> Test msg
- -> 
- -> 
- -> .
-  -  250 2.0.0 Ok: queued as F3049248C8
- - QUIT
-  -  221 2.0.0 Bye
-  Connection closed with remote host.</pre>
+<pre>➜  sneakymailer swaks <span class="nt">--from</span> <span class="s2">"angelicaramos@sneakymailer.htb"</span> <span class="nt">--body</span> <span class="s2">"Test msg"</span> <span class="nt">--to</span> angelicaramos@sneakymailer.htb
+<span class="o">===</span> Trying sneakymailer.htb:25...
+<span class="o">===</span> Connected to sneakymailer.htb.
+&lt;-  220 debian ESMTP Postfix <span class="o">(</span>Debian/GNU<span class="o">)</span>
+-&gt; EHLO m19o
+&lt;-  250-debian
+&lt;-  250-PIPELINING
+&lt;-  250-SIZE 10240000
+&lt;-  250-VRFY
+&lt;-  250-ETRN
+&lt;-  250-STARTTLS
+&lt;-  250-ENHANCEDSTATUSCODES
+&lt;-  250-8BITMIME
+&lt;-  250-DSN
+&lt;-  250-SMTPUTF8
+&lt;-  250 CHUNKING
+ -&gt; MAIL FROM:&lt;angelicaramos@sneakymailer.htb&gt;
+&lt;-  250 2.1.0 Ok
+ -&gt; RCPT TO:&lt;angelicaramos@sneakymailer.htb&gt;
+&lt;-  250 2.1.5 Ok
+ -&gt; DATA
+&lt;-  354 End data with &lt;CR&gt;&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;
+ -&gt; Date: Wed, 15 Jul 2020 22:56:30 <span class="nt">-0400</span>
+ -&gt; To: angelicaramos@sneakymailer.htb
+ -&gt; From: angelicaramos@sneakymailer.htb
+ -&gt; Subject: <span class="nb">test </span>Wed, 15 Jul 2020 22:56:30 <span class="nt">-0400</span>
+ -&gt; Message-Id: &lt;20200715225630.013546@m19o&gt;
+ -&gt; X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/
+ -&gt; 
+ -&gt; Test msg
+ -&gt; 
+ -&gt; 
+ -&gt; <span class="nb">.</span>
+&lt;-  250 2.0.0 Ok: queued as F3049248C8
+ -&gt; QUIT
+&lt;-  221 2.0.0 Bye
+<span class="o">===</span> Connection closed with remote host.
+</pre>
