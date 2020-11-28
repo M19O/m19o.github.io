@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 <img src="https://i.ibb.co/2tgV0yX/sneakymailer.png" alt="sneakymailer" border="0">
 
@@ -540,15 +540,4 @@ root@sneakymailer:/tmp/pip-req-build-9k8kjhct# <span class="nb">whoami
 root@sneakymailer:~#
 </pre>
   
-<h1>Thanks for Reading 🙏</h1>  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+<h1>Thanks for Reading 🙏</h1>
