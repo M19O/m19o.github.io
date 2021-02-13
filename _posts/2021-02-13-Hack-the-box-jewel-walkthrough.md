@@ -45,7 +45,7 @@ published: true
 <span class="na">bill</span>
 </pre>
 <pre>
-<p> The password is "spongebob" we cracked it 
+<p>The password is "spongebob" we cracked it 
 if you remember </p><p>Let`s upgrade our shell </p>
 </pre>
 <img src="https://i.ibb.co/wJVwsXx/ssh.jpg" alt="ssh" border="0">
