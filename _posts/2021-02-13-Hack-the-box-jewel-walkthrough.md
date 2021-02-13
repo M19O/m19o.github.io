@@ -20,4 +20,11 @@ published: false
 <p>Let`s enumerate the BLOG!</p>
 <img src="https://i.ibb.co/FmT1Ppz/Bill.png" alt="Bill" border="0">
 <img src="https://i.ibb.co/s9vmvfL/Jennifer.png" alt="Jennifer" border="0">
+<p>We found 2 user Bill,Jennifer </p>
+
+<p>Let`s enumerate the REPO </p>
+<img src="https://i.ibb.co/0fNWrZK/Screenshot-from-2021-02-13-18-15-14.png" alt="Screenshot-from-2021-02-13-18-15-14" border="0">
+
+<p>After some enumerating i found SQL file "bd.sql" and i got some hashes</p>
+
 
