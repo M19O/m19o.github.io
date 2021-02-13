@@ -74,5 +74,4 @@ published: true
                                                                 </pre>
 <img src="https://i.ibb.co/JzTS9cn/cmd19.jpg" alt="cmd19" border="0">
 
-<p>Thanks for reading i hope you enjoyed <3</p>
-                    
+<p>Thanks for reading i hope you enjoyed </p>
