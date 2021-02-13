@@ -38,14 +38,15 @@ published: true
 <p>Change the ip to your ip</p>
 <img src="https://i.ibb.co/52wq0rs/web10.png" alt="web10" border="0">
 <img src="https://i.ibb.co/GRGjx1b/cmd2.jpg" alt="cmd2" border="0">
-<blockquote>
+<pre>
 <span class="k">$ su bill</span>
 <span class="na">Password: </span>
 <span class="k">bill@jewel:~$ whoami</span>
 <span class="na">bill</span>
-</blockquote>
-<p>The password is "spongebob" we cracked it,if you remember </p>                                                     <p>Let`s upgrade our shell </p>
-
+</pre>
+<pre>
+<p> The password is "spongebob" we cracked it,if you remember </p>                                           <p>Let`s upgrade our shell </p>
+</pre>
 <img src="https://i.ibb.co/wJVwsXx/ssh.jpg" alt="ssh" border="0">
 <img src="https://i.ibb.co/cCN66PD/ssshhs1.jpg" alt="ssshhs1" border="0">
 
