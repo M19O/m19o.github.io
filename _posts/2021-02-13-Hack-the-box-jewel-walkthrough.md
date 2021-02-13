@@ -26,5 +26,8 @@ published: false
 <img src="https://i.ibb.co/0fNWrZK/Screenshot-from-2021-02-13-18-15-14.png" alt="Screenshot-from-2021-02-13-18-15-14" border="0">
 
 <p>After some enumerating i found SQL file "bd.sql" and i got some hashes</p>
+<img src="https://i.ibb.co/3swY3Lz/PASSWORD.png" alt="PASSWORD" border="0">
+
+<p>I could break Bill hash "spongebob" but couldn`t login, let`s countinue enumeration</p>
 
 
