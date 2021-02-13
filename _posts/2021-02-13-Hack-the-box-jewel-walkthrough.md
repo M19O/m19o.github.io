@@ -29,5 +29,11 @@ published: false
 <img src="https://i.ibb.co/3swY3Lz/PASSWORD.png" alt="PASSWORD" border="0">
 
 <p>I could break Bill hash "spongebob" but couldn`t login, let`s countinue enumeration</p>
+<img src="https://i.ibb.co/JKpyJ9q/Screenshot-from-2021-02-13-18-27-25.png" alt="Screenshot-from-2021-02-13-18-27-25" border="0">
+<p>It`s using ruby '2.5.5' , let`s search for an exploit</p>
+
+
+
+
 
 
