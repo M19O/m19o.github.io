@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 <h1>Buffer overflow</h1>
 <p>
