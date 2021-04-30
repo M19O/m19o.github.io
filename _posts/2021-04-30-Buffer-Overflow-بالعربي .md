@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 <h1>Buffer overflow</h1>
 <p>
@@ -13,7 +13,7 @@ published: true
 ال Attacker بيعمل FUZZ علي ال Application عشان يعرف مساحة تخزين الاوامر الي بيبعتها لل Memory و أول ما يوصل للجزء دا يبتدي يعمل ال Payload بتاعه عشان يخلي ال Application ينفذ اوامر تديله هو صلاحيات علي ال Machine أو يقدر انه ياخد ملفات Senstive و ممكن يأذي ال Enviroment كله. 
 في نوعين لل Buffer OverFlow Attack :
 1- Stack-based
-وال Attack دا بيبقي علي ال Stack الموجودة في ال RAM 
+وال Attack دا بيبقasdي علي ال Stack الموجودة في ال RAM 
 طب ايه هو ال Stack ؟ 
 ال Stack دا جزء موجود في ال Ram , وظيفته تنفيذ الاوامر بتاعت ال Application و بيكون LIFO يعني (Last In First Out ) يعني أخر أمر في الترتيب هو أول أمر بيتنفذ
 2- Heap-based 
