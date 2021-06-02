@@ -48,7 +48,7 @@ published: true
 <p>The password is "spongebob" we cracked it 
 if you remember </p><p>Let`s upgrade our shell </p>
 </pre>
-<img src="https://i.ibb.co/wJVwsXx/ssh.jpg" alt="ssh" border="0">
+<img src="https://ibb.co/sjBsjxB" alt="ssh" border="0">
 <img src="https://i.ibb.co/cCN66PD/ssshhs1.jpg" alt="ssshhs1" border="0">
 
 <h2>Root flag</h2>
